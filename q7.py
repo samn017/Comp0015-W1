@@ -13,12 +13,16 @@ def shape(sides, size):
         size -= 10/sides
 
 
-    
-for i in range (3,6):
+colour = ['green','blue', 'green', 'red', 'pink' ]
+
+for i in range (3,8):
+    color( colour[i-3])
     shape(i, i*20)
     penup()
-    newx = pos() + i*20
-    setpos(newx , 0)
+    sety(0)
+    setx(xcor() + i*20 + i*30)
     setheading(0)
+
+
 
 exitonclick()
